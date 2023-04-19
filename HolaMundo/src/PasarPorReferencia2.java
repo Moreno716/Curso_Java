@@ -1,8 +1,8 @@
-class Persona{
+class Persona {
     private String nombre;
 
     public void modificarNombre(String nuevoNombre){
-        this.nombre = nuevoNombre;
+        nombre = nuevoNombre;
     }
 
     public String leerNombre(){
@@ -13,23 +13,24 @@ public class PasarPorReferencia2 {
     public static void main(String[] args) {
 
         Persona persona = new Persona();
-        persona.modificarNombre("Andres");
+        persona.modificarNombre("Andrés");
 
-        System.out.println("iniciamos metodo main");
+        System.out.println("iniciamos el método main");
 
         System.out.println("persona.nombre = " + persona.leerNombre());
-        System.out.println("Antes de llamar el metodo test");
+        System.out.println("Antes de llamar al método test");
         test(persona);
-        System.out.println("Despues de llamar el metodo test");
+        System.out.println("Después de llamar al método test");
 
         System.out.println("persona.nombre = " + persona.leerNombre());
 
-        System.out.println("Finaliza el metodo main con los datos de la persona modificados");
+        System.out.println("Finaliza el método main con los datos de la persona modificados!");
     }
 
     public static void test(Persona persona){
-        System.out.println("Iniciamos metodo test");
+        System.out.println("Iniciamos el método test");
         persona.modificarNombre("Pepe");
-        System.out.println("Finaliza el metodo test");
+        System.out.println("Finaliza el método test");
     }
 }
+

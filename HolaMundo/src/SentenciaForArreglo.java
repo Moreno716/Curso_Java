@@ -3,16 +3,17 @@ import javax.swing.*;
 public class SentenciaForArreglo {
     public static void main(String[] args) {
 
-        String[] nombres = {"Pedro", "Mario", "Sara", "Karen", "Jhon"};
+        String[] nombres = {"Andres", "Pepe", "Maria", "Paco", "Lalo", "Bea", "Pato", "Pepa"};
         int count = nombres.length;
-        for (int i = 0; i < count; i++){
-            if (nombres[i].equalsIgnoreCase("Mario") || nombres[i].equalsIgnoreCase("Jhon")){
+        for(int i = 0; i < count; i++){
+            if(nombres[i].toLowerCase().contains("ANDRES".toLowerCase()) ||
+                    nombres[i].toLowerCase().contains("pePa".toLowerCase())){
                 continue;
             }
-            System.out.println(i + " - " + nombres[i]);
+            System.out.println( i + ".- " + nombres[i]);
         }
-
-        String buscar = JOptionPane.showInputDialog("Ingrese un nombre: ");
+        
+        String buscar = JOptionPane.showInputDialog("Ingrese un nombre, ejemplo \"Pepe\" o \"Maria\":");
         System.out.println("buscar = " + buscar);
 
         boolean encontrado = false;
@@ -23,10 +24,10 @@ public class SentenciaForArreglo {
             }
             System.out.println("nombres = " + nombres[i]);
         }
-        if (encontrado){
-            JOptionPane.showMessageDialog(null, buscar + " fue encontrado");
-        }else {
-            JOptionPane.showMessageDialog(null, buscar + " no existe en el sistema");
+        if(encontrado){
+            JOptionPane.showMessageDialog(null, buscar + " fue encontrado!");
+        } else {
+            JOptionPane.showMessageDialog(null, buscar + " no existe en el sistema!");
         }
     }
 }

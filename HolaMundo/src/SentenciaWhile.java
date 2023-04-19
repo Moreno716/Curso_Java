@@ -11,6 +11,7 @@ public class SentenciaWhile {
         boolean prueba = true;
 
         while(prueba){
+
             if(i == 7){
                 prueba = false;
             }
@@ -19,19 +20,19 @@ public class SentenciaWhile {
         }
 
         prueba = false;
-        do{
+        do {
             System.out.println("se ejecuta al menos una vez");
-        }while(prueba);
+        } while (prueba);
 
         prueba = true;
-        i = 0;
+        i=0;
 
-        do{
+        do {
             if(i == 10){
                 prueba = false;
             }
             System.out.println("i = " + i);
             i++;
-        }while(prueba);
+        } while (prueba);
     }
 }

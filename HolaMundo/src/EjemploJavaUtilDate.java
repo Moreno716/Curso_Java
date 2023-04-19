@@ -3,17 +3,17 @@ import java.util.Date;
 
 public class EjemploJavaUtilDate {
     public static void main(String[] args) {
-
+        
         Date fecha = new Date();
 
         System.out.println("fecha = " + fecha);
 
-        SimpleDateFormat df = new SimpleDateFormat("'Fecha: 'yyyy/MM/dd - 'Hora: 'HH:mm:ss z");
+        SimpleDateFormat df = new SimpleDateFormat("EEEE dd 'de' MMMM, yyyy");
         String fechaStr = df.format(fecha);
 
         long j = 0;
-        for(int i = 0; i < 1000000; i++){
-            j += i;
+        for(int i = 0; i < 100000000; i++){
+            j +=i;
         }
         System.out.println("j = " + j);
 
